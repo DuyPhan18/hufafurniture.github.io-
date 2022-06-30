@@ -22,7 +22,28 @@ body{
     --section-title-: 2.5rem; 
 }
 section{
-    margin-bottom: 1.5em;
+    margin: 3rem 0;
+}
+.bg-r{
+    background-color: rgb(231, 68, 68);
+}
+.bg-g{
+    background-color: rgb(87, 153, 65);
+}
+.bg-y{
+    background-color: rgb(224, 212, 78);
+}
+.bg-p{
+    background-color: rgb(129, 42, 170);
+}
+.bg-gr{
+    background-color: rgb(133, 131, 131);
+}
+.bg-w{
+    background-color: rgb(210, 210, 210);
+}
+.mt-3{
+    margin-top: 10px;
 }
 /*------------------------------------header-----------------------------*/
 .sub_nav{
@@ -81,11 +102,13 @@ nav{
 .search_bar i{
     font-size: 1rem;
 }
+.btn-user{
+}
 .user{
+    width: fit-content;
+    align-items: center;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-    justify-content: end;
     text-align: center;
     border-radius: 1rem;
 
@@ -93,7 +116,7 @@ nav{
 .user span{
     font-size: 0.7rem;
     font-weight: 400;
-    padding: 0.24rem;
+    margin: 0 0.24rem;
 }
 .user img{
     height: 1.5rem;
@@ -144,17 +167,43 @@ nav{
     background: rgb(213, 213, 213);
     color: #000;
 }
+/*------------------------------Category BTN--------------------*/
+.category_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: scroll;
+    padding: 0rem;
+}
+.category{
+     border: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0.5rem;
+}
+.cate-btn{
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem; 
+    border-radius: .7rem;
+    padding: 0.3rem;
+}
+.cate-btn img{
+    height: 7rem;
+}
 /*------------------------------New COLLECTIONS-------------*/
 .st h1{
     font-size: var(--section-title-);
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .section_content{
     display: flex;
 }
 .product{
-    padding: 1rem 1rem;
+    padding: 1rem 0.5rem;
 }
 .product_card{
     width: 20rem;
@@ -227,6 +276,29 @@ nav{
 }
 .love i{
     padding: 0.5rem;
+}
+/*----------------------------Banner product intro-------------------*/
+.banner-product-intro{
+    margin: 1rem 0;
+}
+.banner-wrapper{
+    width: 100%;
+}
+.banner-wrapper img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 0.7rem;
+}
+.banner-product-content{
+    position: absolute;
+    top:113rem;
+    left: 10rem;
+    font-size: 5rem;
+    color: #fff;
+}
+.banner-product-content small{
+    font-size: 3rem;
 }
 /*------------------------------contact--------------------*/
 .contact{
@@ -543,6 +615,10 @@ tr:nth-child(even) {
     border-radius: 0.7rem;
     font-weight: 500;
     transition: .4s;
+}
+.recommend_content{
+    display: flex;
+    overflow-x: scroll;
 }
 /*------------------FOOTER------------------------------*/
 footer{
