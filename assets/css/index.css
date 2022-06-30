@@ -135,7 +135,7 @@ nav{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 15rem;
+    top: 18rem;
     left: 10rem;
     letter-spacing: 2px;
     font-weight: 800;
@@ -151,7 +151,7 @@ nav{
     position: absolute;
     align-items: center;
     padding: 0.7rem 1rem;
-    top: 25rem;
+    top: 28rem;
     left: 10rem;
     background: rgb(71, 70, 70);
     height: 3rem;
@@ -292,7 +292,7 @@ nav{
 }
 .banner-product-content{
     position: absolute;
-    top:113rem;
+    top:120rem;
     left: 10rem;
     font-size: 5rem;
     color: #fff;
@@ -380,7 +380,7 @@ nav{
 }
 .header_content{
     position: absolute;
-    top: 12rem;
+    top: 14rem;
     left: 10rem;
     color: #fff;
     line-height: 1;
@@ -619,6 +619,25 @@ tr:nth-child(even) {
 .recommend_content{
     display: flex;
     overflow-x: scroll;
+}
+/*--------------------------ABOUT US-------------------*/
+.about-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin:2rem 0;
+}
+.info_img-wrapper{
+    padding: 0 2rem;
+     align-items: center;
+    justify-content: center;
+}
+.info_img img{
+    border-radius: .7rem;
+    align-items: center;
+    justify-content: center;
+}
+.info-content{
+    align-items: center;
 }
 /*------------------FOOTER------------------------------*/
 footer{
