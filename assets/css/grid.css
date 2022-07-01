@@ -70,17 +70,17 @@
     }
     /*banner*/
     .banner{
-        height: 100%;
+        height: 20rem;
     }
     .img_banner{
         width: 100%;
-        height: 100%;
+        height: 20rem;
     }
     .banner-content{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 10rem;
+        top: 4rem;
         left: 5rem;
         letter-spacing: 1px;
         font-weight: 800;
@@ -94,16 +94,55 @@
     }
     .btn-explore{
         position: absolute;
-        top: 20rem;
+        top: 14rem;
         left: 5rem;
         background: rgb(71, 70, 70);
         height: 3rem;
         width: 9rem;
         font-size: 1rem;
+        padding: 0.7rem 0;
         font-weight: 600;
         color:#fff;
         border: none;
         border-radius: 5rem;
+        cursor: pointer;
+    
+    }
+    .btn-carousel{
+        display: flex;
+        position: absolute;
+        width: 105.5%;
+        top: 10rem;
+        left: -1.5rem;
+        right: rem;
+        z-index: 1;
+        text-align:center;
+        justify-content: space-between;
+    }
+    .btn-arrow{
+        align-items: center;
+        text-align: center;
+        font-size: 2.5rem;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5); 
+        box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5);
+        transition: 0.4s;
+    }
+    .btn-arrow:hover{
+        background-color: rgb(143, 141, 141);
+        color: #fff;
+    }
+    .next-button{
+        cursor: pointer;
+        height: 3rem;
+        width: 3rem;
+    }
+    .prev-button{
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
     
     }
     /*---------------------------category-------------------*/
@@ -483,6 +522,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        z-index: 2;
     
     }
     .search_input::after{
@@ -508,8 +548,8 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 10rem;
-        left: 3rem;
+        top: 2rem;
+        left: 1.5rem;
         letter-spacing: 1px;
         font-weight: 800;
         color: #fff;
@@ -522,11 +562,11 @@
     }
     .btn-explore{
         position: absolute;
-        top: 17rem;
+        top: 10rem;
+        left: 1.5rem;
         text-align: center;
         align-items: center;
         justify-content: center;
-        left: 3rem;
         background: rgb(71, 70, 70);
         height: 2.7rem;
         width: 9rem;
@@ -535,6 +575,42 @@
         color:#fff;
         border: none;
         border-radius: 5rem;
+    
+    }
+    .btn-carousel{
+        display: flex;
+        position: absolute;
+        width: 112.5%;
+        top: 6.5rem;
+        left: -1.2rem;
+        z-index: 1;
+        text-align:center;
+        justify-content: space-between;
+    }
+    .btn-arrow{
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5); 
+        box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5);
+        transition: 0.4s;
+    }
+    .btn-arrow:hover{
+        background-color: rgb(143, 141, 141);
+        color: #fff;
+    }
+    .next-button{
+        cursor: pointer;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .prev-button{
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
     
     }
      /*---------------------------category-------------------*/
@@ -971,4 +1047,244 @@ footer{
     .col-sm-10 {width: 83.33%;}
     .col-sm-11 {width: 91.66%;}
     .col-sm-12 {width: 100%;}
+}
+
+@media screen and (max-width: 550px){
+    [class*="col-"] {
+        width: 100%;
+      }
+    body{
+        padding: 0 2rem;
+    }
+    .sub_nav-left{
+        font-size: 0.7rem;
+    }
+    .sub_nav-right{
+        font-size: 0.7rem;
+    }
+    .logo_nav{
+        height: 3rem;
+    }
+    .nav_items{
+        position: fixed;
+        bottom: 2rem;
+        font-size: 0.6rem;
+        background-color: #fff;
+        box-shadow: 0 8px 24px hsla(228, 66%, 45%, .15);
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        border-radius: 1.25rem;
+        transition: .4s;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 2;
+    
+    }
+    .search_input::after{
+        width: 0px;
+        border: none;
+        padding: 0.25rem;
+    }
+    .st h1{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .banner{
+        height: 15rem;
+    }
+    .img_banner{
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+    }
+    .banner-content{
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 2rem;
+        left: 1.5rem;
+        letter-spacing: 1px;
+        font-weight: 800;
+        color: #fff;
+    }
+    .banner-content span{
+        font-size: 1.8rem;
+    }
+    .banner-content small{
+        font-size: 1rem;
+    }
+    .btn-explore{
+        position: absolute;
+        top: 10rem;
+        left: 1.5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background: rgb(71, 70, 70);
+        height: 2.7rem;
+        width: 9rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color:#fff;
+        border: none;
+        border-radius: 5rem;
+    
+    }
+    .btn-carousel{
+        display: flex;
+        position: absolute;
+        width: 108.5%;
+        top: 6.5rem;
+        left: -1.2rem;
+        z-index: 1;
+        text-align:center;
+        justify-content: space-between;
+    }
+    .btn-arrow{
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5); 
+        box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5);
+        transition: 0.4s;
+    }
+    .btn-arrow:hover{
+        background-color: rgb(143, 141, 141);
+        color: #fff;
+    }
+    .next-button{
+        cursor: pointer;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .prev-button{
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+    
+    }
+     /*------------------------banner product intro----------------*/
+     .banner-product-intro{
+        position: relative;
+        margin: 1rem 0;
+    }
+    .banner-wrapper{
+        width: 100%;
+    }
+    .banner-wrapper img{
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: 0.7rem;
+    }
+    .banner-product-content{
+        position: absolute;
+        top:95rem;
+        left: 5rem;
+        font-size: 3.5rem;
+        color: #fff;
+    }
+    .banner-product-content small{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 450px){
+    [class*="col-"] {
+        width: 100%;
+      }
+    body{
+        padding: 0 2rem;
+    }
+    .sub_nav-left{
+        font-size: 0.7rem;
+    }
+    .sub_nav-right{
+        font-size: 0.7rem;
+    }
+    .logo_nav{
+        height: 3rem;
+    }
+    .nav_items{
+        position: fixed;
+        bottom: 2rem;
+        font-size: 0.6rem;
+        background-color: #fff;
+        box-shadow: 0 8px 24px hsla(228, 66%, 45%, .15);
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        border-radius: 1.25rem;
+        transition: .4s;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 2;
+    
+    }
+    .search_input::after{
+        width: 0px;
+        border: none;
+        padding: 0.25rem;
+    }
+    .st h1{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .banner{
+        height: 15rem;
+    }
+    .img_banner{
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+    }
+    
+    .btn-carousel{
+        display: flex;
+        position: absolute;
+        width: 110.5%;
+        top: 6.5rem;
+        left: -1.2rem;
+        z-index: 1;
+        text-align:center;
+        justify-content: space-between;
+    }
+    .btn-arrow{
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5); 
+        box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.5);
+        transition: 0.4s;
+    }
+    .btn-arrow:hover{
+        background-color: rgb(143, 141, 141);
+        color: #fff;
+    }
+    .next-button{
+        cursor: pointer;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .prev-button{
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+    
+    }
 }
