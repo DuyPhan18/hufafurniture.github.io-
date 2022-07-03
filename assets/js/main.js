@@ -52,6 +52,10 @@ $(document).ready(function(){
         }
         })
    })
+   /*-------------------------PRODUCT------------------------*/
+   $(document).ready(function(){
+    $('.product').fadeIn(1000);
+   })
     
     /*---------TAB-----------------*/
     $(document).ready(function () {

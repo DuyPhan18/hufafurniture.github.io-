@@ -306,6 +306,7 @@ nav{
 
 .product{
     padding: 1rem 0.5rem;
+    display: none;
 }
 @keyframes appear {
     0%   {bottom:-15px;} 
