@@ -1,5 +1,38 @@
-   
-    /*-------------Carousel-----------*/
+/*------------------------NAV----------------------*/
+$(document).ready(function () {
+    $('.nav_item a').click(function(){
+        $('.nav_item a').removeClass('active');
+
+        $(this).addClass('active');
+    })
+})
+/*------------------------Search--------------------*/
+$(document).ready(function(){
+    $('.search-result').hide();
+    $('.search_input').keyup(function(){
+        let value = $(this).val().toLowerCase();
+        if(value.length > 0){
+            $('.search-result').fadeIn();
+            $('.search-result tr').filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+            })
+        }else{
+             $('.search-result').hide();
+
+        }
+
+        
+    })
+})
+/*-----------------cart------------------------*/
+$(document).ready(function(){
+    $('.cart-result').hide();
+    $('.cart').click(function(){
+        $('.cart-result').fadeToggle(500);
+
+    })
+})
+/*-------------Carousel-----------*/
    $(document).ready(function () {
     $('.next-button').on('click', function () {
         var currentBanner = $('.sld-active');
@@ -21,19 +54,20 @@
    })
     
     /*---------TAB-----------------*/
-    const one = document.querySelector.bind(document);
-    const all = document.querySelectorAll.bind(document);
+    $(document).ready(function () {
+        $('.tab_pane').hide();
+        $('.tab_pane:first-child').fadeIn();
+        $('.tab_item').click(function(){
+            //remove active class
+            $('.tab_item').removeClass('active-tab')
+            //active tab
+            $(this).addClass('active-tab')
 
-    const tabItem = all('.tab_item');
-    const tabPane = all('.tab_pane');
+            //show tab content
+            let id_tab_content = $(this).children('a').attr('href');
 
-    tabItem.forEach((tab, index) => {   
-        const pane = tabPane[index];
-        tab.onclick = function () {
-            one('.tab_item.active-tab').classList.remove('active-tab');
-            one('.tab_pane.active-tab').classList.remove('active-tab');
+            $('.tab_pane').hide();
 
-            this.classList.add('active-tab');
-            pane.classList.add('active-tab');
-        }
+            $(id_tab_content).fadeIn();
+        })
     })

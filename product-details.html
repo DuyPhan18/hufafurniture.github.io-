@@ -11,6 +11,10 @@
     <!--css-->
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/grid.css"> 
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
     <header class="header" id="header">
@@ -116,20 +120,20 @@
                 </div>
             </div>
             <div class="more_information">
-                <div class="menu_tab">
-                    <button class="tab_item active-tab">
-                        Overview
-                    </button>
+                <ul class="menu_tab">
+                    <li class="tab_item active-tab">
+                       <a href="#content-1">Overview</a> 
+                    </li>
                     
-                    <button class="tab_item">
-                        Specifications
-                    </button>
-                    <button class="tab_item">
-                        Feedbacks
-                    </button>
-                </div>
+                    <li class="tab_item">
+                        <a href="#content-2">Specifications</a>
+                    </li>
+                    <li class="tab_item">
+                        <a href="#content-3">Feedbacks</a>
+                    </li>
+                </ul>
                 <div class="tab_content">
-                    <div class="tab_pane active-tab">
+                    <div class="tab_pane" id="content-1">
                         <div class="overview product_info_details">
                             <div class="product-img col-6 col-md-6 col-sm-12">
                                 <img src="assets/img/p2.png" alt="about-us" class="img_about">
@@ -155,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab_pane">
+                    <div class="tab_pane" id="content-2">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -173,7 +177,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="tab_pane feedback_tab">
+                    <div class="tab_pane feedback_tab" id="content-3">
                         <form class="feedback_form">
                             <input type="text" class="feedback-input" placeholder="enter your feedback here">
                             <button type="submit" class="feedback_btn">Send</button>
