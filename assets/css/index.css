@@ -306,7 +306,6 @@ nav{
 
 .product{
     padding: 1rem 0.5rem;
-    display: none;
 }
 @keyframes appear {
     0%   {bottom:-15px;} 
@@ -314,6 +313,7 @@ nav{
     100% {top:0px;}
   }
 .product_card{
+    position: relative;
     width: 20rem;
     height: 20rem;
     border-radius: 0.5rem;
@@ -355,21 +355,26 @@ nav{
 .card-button{
     display: flex;
     width: 100%;
-    justify-content: space-between;
     margin-top: 0.5rem;
 }
 .card-btn{
+    position: absolute;
+    bottom: 1rem;
+    font-size: 0.7rem;
+    font-weight: 400;   
+}
+.add-cart-btn{
+    margin: 0 3rem;
     background: rgb(71, 70, 70);
     height: 2rem;
     width: 5rem;
-    font-size: 0.7rem;
-    font-weight: 400;
+    justify-content: center;
+    transition: .3s;
+    align-items: center;
     color:#fff;
     border: none;
     border-radius: 5rem;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
+
 }
 .card-btn:hover{
     background: rgb(138, 136, 136);
@@ -380,7 +385,7 @@ nav{
     border: none;
     height: 2rem;
     width: 2rem;
-    text-align: center;
+    justify-content: end;
 }
 .love i{
     padding: 0.5rem;
@@ -392,6 +397,7 @@ nav{
 /*----------------------------Banner product intro-------------------*/
 .banner-product-intro{
     margin: 1rem 0;
+    position: relative;
 }
 .banner-wrapper{
     width: 100%;
@@ -404,7 +410,7 @@ nav{
 }
 .banner-product-content{
     position: absolute;
-    top:120rem;
+    top:5rem;
     left: 10rem;
     font-size: 5rem;
     color: #fff;
@@ -526,9 +532,9 @@ nav{
 }
 .filter_item:hover{
     background-color: rgb(88, 87, 87);
-}
-.filter_item a:hover{
     color: #fff;
+    border: none;
+
 }
 .filter_list-color{
     display: flex;
@@ -748,6 +754,12 @@ tr:nth-child(even) {
 }
 .info-content{
     align-items: center;
+}
+.payments{
+    border-radius: .7rem;
+    background-image: linear-gradient(rgba(251, 251, 253, 0.5), rgba(112, 56, 171, 0.5)),
+                  url("../img/pm.jpg");
+    object-fit: cover;
 }
 .payments-content{
     text-align: center;

@@ -24,6 +24,15 @@ $(document).ready(function(){
         
     })
 })
+/*---------------------------Filter-----------------------*/
+$(document).ready(function(){
+    $('.filter_item').click(function(){
+        let value = $(this).val().toLowerCase();
+        $('.product').filter(function(){
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        })
+    })
+})
 /*-----------------cart------------------------*/
 $(document).ready(function(){
     $('.cart-result').hide();
@@ -55,7 +64,38 @@ $(document).ready(function(){
    /*-------------------------PRODUCT------------------------*/
    $(document).ready(function(){
     $('.product').fadeIn(1000);
+    jsonObject.products.forEach((i)=>loadProducts(i));
    })
+   function loadProducts(data) {
+     var product_card = document.createElement('div');
+     product_card.classList.add('product', 'col-3', 'col-md-4', 'col-sm-6');
+     product_card.innerHTML =     
+    '<div class="product_card ">'+
+        '<div class="card_img">'+
+             '<a href="./product-details.html" class="product_link">'+
+                 '<img class="product_img" src="' + data.img + '" alt="product_img">'+
+             '</a>'+
+        '</div>'+
+        '<div class="card_info ">'+
+             '<a href="./product-details.html" class="product_link">'+
+                 '<h3>'+ data.name +'</h3>'+
+             '</a>'+
+            '<div class="product_desc">'+
+                 '<p>' +data.desc + '</p>'+
+            '</div>'+
+            '<div class="product_price">'+
+                ' <strong>Price: </strong>$' +data.price + ''+
+            '</div>'+
+            '<div class="card-button">'+
+                ' <button class="card-btn add-cart-btn" type="submit">Add to cart</button>'+
+                 '<button class=" card-btn love">'+
+                    ' <i class="bx bxs-heart"></i>'+
+                 '</button>'+
+            '</div>'+
+        '</div>'+
+    '</div>';
+ document.getElementById("product-data").appendChild(product_card);
+   }
     /*----------------------wishlist btn------------------------*/
     $(document).ready(function(){
         $('.love').click(function(){
