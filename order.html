@@ -28,28 +28,100 @@
             </div>
         </div>
         <hr>
-        <nav class="nav">
-            <a href="./index.html" class="logo col-3 col-md-8 col-sm-3">
+        <nav class="nav" id="nav">
+            <a href="./index.html" class="logo col-3 col-md-6 col-sm-3">
                 <img src="assets/img/hufaIcon.png" alt="logo" class="logo_nav">
             </a>
-            <ul class="nav_items col-6 col-sm-10 col-md-10">
-                <li class="nav_item">
-                   <a href="./index.html" class="nav_link">HOME</a> 
+            <ul class="nav_items col-5 ">
+                <li class="nav_item ">
+                   <a href="./index.html" id="nav_link" class="nav_link">HOME</a> 
                 </li>
-                <li class="nav_item">
-                    <a href="./all-product.html" class="nav_link">ALL PRODUCTS</a> 
+                <li class="nav_item ">
+                    <a href="./all-product.html" id="nav_link" class="nav_link">ALL PRODUCTS</a> 
                 </li>
                  <li class="nav_item">
-                    <a href="#" class="nav_link">ABOUT Us</a> 
+                    <a href="./about-us.html"id="nav_link" class="nav_link">ABOUT US</a> 
                  </li>
                  <li class="nav_item">
-                    <a href="./contact.html" class="nav_link">CONTACT</a> 
+                    <a href="./contact.html"id="nav_link" class="nav_link">CONTACT</a> 
                  </li>
             </ul>
-            <div class=" col-2 col-md-3 col-sm-6">
+            <div class=" col-2 col-md-3 col-sm-7">
                 <div class="search_bar">
                       <i class='bx bx-search-alt'></i>
                       <input class="search_input" type="search" name="search_input" placeholder="enter keyword">
+                </div>
+                <div class="search-result">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th> Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sofa single</td>
+                                <td>Gray</td>
+                                <td>Sofa</td>
+                            </tr>
+                            <tr>
+                                <td>Student table</td>
+                                <td>brown</td>
+                                <td>Table</td>
+                            </tr>
+                            <tr>
+                                <td>SOfa bed</td>
+                                <td>Pink</td>
+                                <td>Sofa</td>
+                            </tr>
+                            <tr>
+                                <td>mmash</td>
+                                <td>23</td>
+                                <td>Gray</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="btn-cart col-1 col-md-1 col-sm-1">
+                <button class="cart">
+                    <i class='bx bx-cart'></i>
+                </button>
+                <div class="cart-result">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sofa single</td>
+                                <td>$150</td>
+                                <td>1</td>
+                                <td>
+                                    <button class="del-cart">
+                                        <i class='bx bx-x' ></i></td>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sofa Bed</td>
+                                <td>$250</td>
+                                <td>2</td>
+                                <td>
+                                    <button class="del-cart">
+                                        <i class='bx bx-x' ></i></td>
+                                    </button>
+                            </tr>
+                           
+                        </tbody>
+                    </table>           
                 </div>
             </div>
             <div class="btn-user col-1 col-md-1 col-sm-1">
@@ -57,7 +129,7 @@
                     <span>username</span>
                     <img src="assets/img/user-img.png" alt="user" class="avatar">
                 </button>
-            </div>
+            </div>      
         </nav>
     </header>
     <main>

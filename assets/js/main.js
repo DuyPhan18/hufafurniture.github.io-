@@ -56,7 +56,12 @@ $(document).ready(function(){
    $(document).ready(function(){
     $('.product').fadeIn(1000);
    })
-    
+    /*----------------------wishlist btn------------------------*/
+    $(document).ready(function(){
+        $('.love').click(function(){
+            $('.love').toggleClass('wishlist-active')
+        })
+    })
     /*---------TAB-----------------*/
     $(document).ready(function () {
         $('.tab_pane').hide();

@@ -385,6 +385,10 @@ nav{
 .love i{
     padding: 0.5rem;
 }
+.wishlist-active{
+   background-color: rgb(255, 0, 47); 
+   color: white;
+}
 /*----------------------------Banner product intro-------------------*/
 .banner-product-intro{
     margin: 1rem 0;

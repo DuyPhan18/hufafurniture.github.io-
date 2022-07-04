@@ -28,28 +28,100 @@
             </div>
         </div>
         <hr>
-        <nav class="nav">
-            <a href="./index.html" class="logo col-3 col-md-8 col-sm-3">
+        <nav class="nav" id="nav">
+            <a href="./index.html" class="logo col-3 col-md-6 col-sm-3">
                 <img src="assets/img/hufaIcon.png" alt="logo" class="logo_nav">
             </a>
-            <ul class="nav_items col-6 col-sm-10 col-md-10">
-                <li class="nav_item">
-                   <a href="./index.html" class="nav_link">HOME</a> 
+            <ul class="nav_items col-5 ">
+                <li class="nav_item ">
+                   <a href="./index.html" id="nav_link" class="nav_link">HOME</a> 
                 </li>
-                <li class="nav_item">
-                    <a href="./all-product.html" class="nav_link">ALL PRODUCTS</a> 
+                <li class="nav_item ">
+                    <a href="./all-product.html" id="nav_link" class="nav_link">ALL PRODUCTS</a> 
                 </li>
                  <li class="nav_item">
-                    <a href="./about-us.html" class="nav_link">ABOUT US</a> 
+                    <a href="./about-us.html"id="nav_link" class="nav_link">ABOUT US</a> 
                  </li>
                  <li class="nav_item">
-                    <a href="./contact.html" class="nav_link">CONTACT</a> 
+                    <a href="./contact.html"id="nav_link" class="nav_link">CONTACT</a> 
                  </li>
             </ul>
-            <div class=" col-2 col-md-3 col-sm-6">
+            <div class=" col-2 col-md-3 col-sm-7">
                 <div class="search_bar">
                       <i class='bx bx-search-alt'></i>
                       <input class="search_input" type="search" name="search_input" placeholder="enter keyword">
+                </div>
+                <div class="search-result">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Color</th>
+                                <th> Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sofa single</td>
+                                <td>Gray</td>
+                                <td>Sofa</td>
+                            </tr>
+                            <tr>
+                                <td>Student table</td>
+                                <td>brown</td>
+                                <td>Table</td>
+                            </tr>
+                            <tr>
+                                <td>SOfa bed</td>
+                                <td>Pink</td>
+                                <td>Sofa</td>
+                            </tr>
+                            <tr>
+                                <td>mmash</td>
+                                <td>23</td>
+                                <td>Gray</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="btn-cart col-1 col-md-1 col-sm-1">
+                <button class="cart">
+                    <i class='bx bx-cart'></i>
+                </button>
+                <div class="cart-result">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sofa single</td>
+                                <td>$150</td>
+                                <td>1</td>
+                                <td>
+                                    <button class="del-cart">
+                                        <i class='bx bx-x' ></i></td>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sofa Bed</td>
+                                <td>$250</td>
+                                <td>2</td>
+                                <td>
+                                    <button class="del-cart">
+                                        <i class='bx bx-x' ></i></td>
+                                    </button>
+                            </tr>
+                           
+                        </tbody>
+                    </table>           
                 </div>
             </div>
             <div class="btn-user col-1 col-md-1 col-sm-1">
@@ -57,7 +129,7 @@
                     <span>username</span>
                     <img src="assets/img/user-img.png" alt="user" class="avatar">
                 </button>
-            </div>
+            </div>      
         </nav>
     </header>
     <main>
@@ -86,61 +158,54 @@
     </main>
     <footer class="footer">
         <div class="footer_top">
-            <div class="footer_logo col-4 col-md-4 col-sm-12">
+            <div class="footer_logo col-4 col-md-2 col-sm-12">
                 <img src="assets/img/hufaIcon.png" alt="logo">
             </div>
-            <div class="footer_items col-8 col-md-8 col-sm-12">
+            <div class="footer_items col-8 col-md-10 col-sm-12">
                 <ul class="footer_item col-4 col-md-4 col-sm-6">
-                    <h3>About Us</h3>
+                    <h3>Policy</h3>
                     <li class="footer_link">
                         Shipping
                     </li>
                     <li class="footer_link">
-                        Shipping
+                        Payments
                     </li>
                     <li class="footer_link">
-                        Shipping
-                    </li>
-                    <li class="footer_link">
-                        Shipping
+                        Return
                     </li>
                 </ul>
                 <ul class="footer_item col-4 col-md-4 col-sm-6">
-                    <h3>About Us</h3>
+                    <h3>Contact</h3>
                     <li class="footer_link">
-                        Shipping
+                        <i class='bx bx-home-alt-2' ></i>
+                        <span>Dis 11, Ho Chi Minh City</span>
                     </li>
                     <li class="footer_link">
-                        Shipping
+                        <i class='bx bxl-gmail' ></i>
+                        <span>support@hufa.com</span> 
                     </li>
                     <li class="footer_link">
-                        Shipping
-                    </li>
-                    <li class="footer_link">
-                        Shipping
+                        <i class='bx bx-phone' ></i>
+                        <span>+84 232 255 486</span>
                     </li>
                 </ul>
                 <ul class="footer_item col-4 col-md-4 col-sm-12">
-                    <h3>About Us</h3>
-                    <li class="footer_link">
-                        Shipping
-                    </li>
-                    <li class="footer_link">
-                        Shipping
-                    </li>
-                    <li class="footer_link">
-                        Shipping
-                    </li>
-                    <li class="footer_link">
-                        Shipping
-                    </li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15678.365334788312!2d106.639114728811!3d10.765945427257334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e949d027e49%3A0x393b1836f8742615!2zUXXhuq1uIDExLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1656863217070!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </ul>
             </div>
         </div>
         <hr class="hr-ft">
-        <div class="copyright">
-            <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All right reservered | hufa funiture</p>
+        <div class="footer-bottom">
+            <div class="social-icon">
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-facebook-circle' ></i>
+                <i class='bx bxl-pinterest' ></i>
+            </div>  
+            <div class="copyright">
+                <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All right reservered | hufa funiture</p>
+            </div>
         </div>
+        
     </footer>
     <script src="assets/js/main.js"></script>
 </body>
