@@ -5,9 +5,8 @@ $(document).ready(function () {
 
         $(this).addClass('active');
     })
-})
+
 /*------------------------Search--------------------*/
-$(document).ready(function(){
     $('.search-result').hide();
     $('.search_input').keyup(function(){
         let value = $(this).val().toLowerCase();
@@ -23,26 +22,21 @@ $(document).ready(function(){
 
         
     })
-})
+
 /*---------------------------Filter-----------------------*/
-$(document).ready(function(){
     $('.filter_item').click(function(){
         let value = $(this).val().toLowerCase();
         $('.product').filter(function(){
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
         })
     })
-})
 /*-----------------cart------------------------*/
-$(document).ready(function(){
     $('.cart-result').hide();
     $('.cart').click(function(){
         $('.cart-result').fadeToggle(500);
 
     })
-})
 /*-------------Carousel-----------*/
-   $(document).ready(function () {
     $('.next-button').on('click', function () {
         var currentBanner = $('.sld-active');
         var nextBanner = currentBanner.next();
