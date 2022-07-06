@@ -12,7 +12,6 @@ $(document).ready(function () {
 /*------------------------Search--------------------*/
     $('.search_input').keyup(function(){
         let value = $(this).val().toLowerCase();
-        console.log(value);
         document.getElementById('search-value').innerHTML=value;
         if(value.length > 0){
             $('.search-result').fadeIn();
@@ -26,10 +25,20 @@ $(document).ready(function () {
 
 /*---------------------------Filter-----------------------*/
     $('.filter_item').click(function(){
-        let value = $(this).val().toLowerCase();
-        $('.product').filter(function(){
+        $('.filter_item').removeClass('active-item');
+        $(this).addClass('active-item');
+
+        let value = $(this).attr('data-filter');
+        if(value == 'all') {
+            $('.product').fadeIn('1000');
+        }else{
+        
+            $('.product').filter(function(){
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-        })
+        })  
+           
+        }
+       
     })
 /*-----------------cart------------------------*/
     $('.cart').click(function(){

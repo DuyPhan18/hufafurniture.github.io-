@@ -51,7 +51,7 @@ var jsonObject = {
         },
         {
             "id": "HF-007",
-            "name":"Student table Bed",
+            "name":"student-table",
             "desc":"Best seller",
             "price":220,
             "img":"assets/img/p7.png",
@@ -75,7 +75,7 @@ var jsonObject = {
         },
         {
             "id": "HF-0010",
-            "name":"Cafe chair",
+            "name":"cafe-chair",
             "desc":"Best seller",
             "price":220,
             "img":"assets/img/p8.png",
