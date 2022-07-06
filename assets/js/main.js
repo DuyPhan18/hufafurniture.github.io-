@@ -12,6 +12,8 @@ $(document).ready(function () {
 /*------------------------Search--------------------*/
     $('.search_input').keyup(function(){
         let value = $(this).val().toLowerCase();
+        console.log(value);
+        document.getElementById('search-value').innerHTML=value;
         if(value.length > 0){
             $('.search-result').fadeIn();
             $('.search-result tr').filter(function(){
