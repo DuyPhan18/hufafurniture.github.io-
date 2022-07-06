@@ -21,10 +21,7 @@ $(document).ready(function () {
             })
         }else{
              $('.search-result').hide();
-
         }
-
-        
     })
 
 /*---------------------------Filter-----------------------*/
