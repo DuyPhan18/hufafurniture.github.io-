@@ -267,12 +267,13 @@ nav{
 
 /*------------------------------Category BTN--------------------*/
 .category_btn{
-    display: flex;
     align-items: center;
     justify-content: space-around;
      padding: 0rem;
 }
 .category{
+    display: flex;
+    flex-wrap: wrap;
      border: none;
     align-items: center;
     text-align: center;
@@ -280,15 +281,32 @@ nav{
     margin: 0.5rem;
 }
 .cate-btn{
+    position: relative;
     align-items: center;
     justify-content: center;
-    width: 8rem;
-    height: 8rem; 
+    width: 100%;
+    height: 18rem; 
     border-radius: .7rem;
-    padding: 0.3rem;
+    padding: 1rem;
 }
 .cate-btn img{
-    height: 7rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+}
+.cate-btn span{
+    position: absolute;
+    top: 5rem;
+    left: 13rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.cate-btn,.cate-btn img:hover{
+opacity: 90%;
+}
+.cate-btn span:hover{
+   color: #fff;
 }
 /*------------------------------New COLLECTIONS-------------*/
 .st h1{

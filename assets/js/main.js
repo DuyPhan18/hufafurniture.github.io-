@@ -1,4 +1,7 @@
-/*------------------------NAV----------------------*/
+    $('.search-result').hide();
+    $('.cart-result').hide();
+
+    /*------------------------NAV----------------------*/
 $(document).ready(function () {
     $('.nav_item a').click(function(){
         $('.nav_item a').removeClass('active');
@@ -7,7 +10,6 @@ $(document).ready(function () {
     })
 
 /*------------------------Search--------------------*/
-    $('.search-result').hide();
     $('.search_input').keyup(function(){
         let value = $(this).val().toLowerCase();
         if(value.length > 0){
@@ -31,7 +33,6 @@ $(document).ready(function () {
         })
     })
 /*-----------------cart------------------------*/
-    $('.cart-result').hide();
     $('.cart').click(function(){
         $('.cart-result').fadeToggle(500);
 
@@ -62,7 +63,7 @@ $(document).ready(function () {
    })
    function loadProducts(data) {
      var product_card = document.createElement('div');
-     product_card.classList.add('product', 'col-3', 'col-md-4', 'col-sm-6');
+     product_card.classList.add('product', 'col-3', 'col-md-3', 'col-sm-6');
      product_card.innerHTML =     
     '<div class="product_card ">'+
         '<div class="card_img">'+
